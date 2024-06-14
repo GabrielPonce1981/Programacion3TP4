@@ -16,8 +16,8 @@ public class Calculadora {
         if (numero < 0) {
             throw new CalculadoraException("El numero no puede ser negativo");
         }
-        if(numero > 12){
-            throw new CalculadoraException("El numero no puede ser mayor a 12");
+        if(numero >= 12){
+            throw new CalculadoraException("El numero no puede ser mayor o igual a 12");
         }
         
         if (numero == 0 || numero == 1) {
