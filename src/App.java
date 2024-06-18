@@ -12,13 +12,14 @@ public class App {
 
         do{
 
-            System.out.println("----------------Menu--------------");
-            System.out.println("------------Ejercicio 1-----------");
-            System.out.println("------------Ejercicio 2-----------");
-            System.out.println("------------Ejercicio 3-----------");
-            System.out.println("------------Ejercicio 11----------");
+            System.out.println("--------------- Menu-----------------");
+            System.out.println("---------- 1. Ejercicio 1 -----------");
+            System.out.println("---------- 2. Ejercicio 2 -----------");
+            System.out.println("---------- 3. Ejercicio 3 -----------");
+            System.out.println("---------- 4. Ejercicio 11 ----------");
+            System.out.println("---------- 5. Salir -----------------");
 
-            System.out.print("Ingrese un numero entero del 1 al 11 o 0 para salir: ");
+            System.out.print("Ingrese la opcion deseada: ");
             opcion = Integer.parseInt(System.console().readLine());
 
             switch (opcion) {
@@ -133,7 +134,7 @@ public class App {
 
                                     String resultado = recursividad.buscarCadena(recursividad.getListaDeCadenas(), cadena, indice);
 
-                                   if(resultado== null){
+                                   if(resultado == null){
                                     System.out.println("La cadena " + cadena + " no se encuentra en la lista");
                                     }
 
@@ -154,7 +155,7 @@ public class App {
                     break;
             }
 
-        }while(opcion != 0 );
+        }while(opcion != 5 );
 
     }
 }
