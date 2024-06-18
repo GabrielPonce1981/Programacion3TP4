@@ -26,20 +26,7 @@ public class RecursividadInciso2 {
         return buscarCadena(listaDeNumeros, posicion);
     }
     
-    // public int buscarCadena(ArrayList<Integer> listaDeNumeros) {
-    //     if (esImpar(listaDeNumeros.get(posicion)) && posicion < listaDeNumeros.size()) {
-    //         contador++;
-    //         posicion++;
-    //         return buscarCadena(listaDeNumeros);
-    //     } else if (!esImpar(listaDeNumeros.get(posicion)) && posicion < listaDeNumeros.size()) {
-    //         posicion++;
-    //         return buscarCadena(listaDeNumeros);
-    //     } else {
-    //         return contador;
-    //     }
-    // }
-
-
+    
     public boolean esImpar(int numero) {
         if (numero % 2 == 0) {
             return false;
