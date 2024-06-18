@@ -2,7 +2,7 @@ import Ejercicio1.Calculadora;
 
 import Ejercicio2.Listas;
 import Ejercicio3.RecursividadInciso1;
-
+import Ejercicio3.RecursividadInciso2;
 
 public class App {
 
@@ -105,7 +105,7 @@ public class App {
                         System.out.println();
                         System.out.println("--------------------Menu Ejercicios Recursividad-------------------");
                         System.out.println("------------1. Cadena de caracteres en Lista de cadenas------------");
-                        System.out.println("------------2. Contar la cantidad de impares en uan lista----------");
+                        System.out.println("------------2. Contar la cantidad de impares en una lista----------");
                         System.out.println("------------3. Determinar si una lista de enteros es creciente-----");
                         System.out.println("------------4. Determinar el maximo de una lista de valores--------");
                         System.out.println("------------5. Salir-------------------");
@@ -140,6 +140,21 @@ public class App {
 
                                     break;
                                 case 2:
+                                    RecursividadInciso2 recursividad2 = new RecursividadInciso2();
+
+                                    recursividad2.agregarCadena(1);
+                                    recursividad2.agregarCadena(2);
+                                    recursividad2.agregarCadena(3);
+                                    recursividad2.agregarCadena(4);
+                                    recursividad2.agregarCadena(5);
+
+                                    System.out.println();
+                                    System.out.println("Lista de enteros: " + recursividad2.getListaDeNumeros());
+
+                                    int resultado2 = recursividad2.buscarCadena(recursividad2.getListaDeNumeros(), 0);
+
+                                    System.out.println("La cantidad de impares en la lista es: " + resultado2);
+
                                 break;        
 
                                 default:
