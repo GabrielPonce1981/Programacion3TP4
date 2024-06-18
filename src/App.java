@@ -15,13 +15,6 @@ public class App {
             System.out.println("------------Ejercicio 1-----------");
             System.out.println("------------Ejercicio 2-----------");
             System.out.println("------------Ejercicio 3-----------");
-            System.out.println("------------Ejercicio 4-----------");
-            System.out.println("------------Ejercicio 5-----------");
-            System.out.println("------------Ejercicio 6-----------");
-            System.out.println("------------Ejercicio 7-----------");
-            System.out.println("------------Ejercicio 8-----------");
-            System.out.println("------------Ejercicio 9-----------");
-            System.out.println("------------Ejercicio 10----------");
             System.out.println("------------Ejercicio 11----------");
 
             System.out.print("Ingrese un numero entero del 1 al 11 o 0 para salir: ");
@@ -39,7 +32,9 @@ public class App {
                     catch (Exception e) {
                         e.printStackTrace();
                     }
-
+                    System.out.println();
+                    System.out.println("Ingrese cualquier tecla para volver al menu principal...");
+                    System.console().readLine();
                     break;
                     
                 case 2:
@@ -63,7 +58,7 @@ public class App {
                         System.out.println("2. Eliminar elemento");
                         System.out.println("3. Mostrar elemento");
                         System.out.println("4. Mostrar lista");
-                        System.out.println("5. Salir");
+                        System.out.println("5. Volver al menu principal");
                         System.out.println();
                         System.out.print("Ingrese una opcion del 1 al 4, 5 para salir: ");
                         opcion = Integer.parseInt(System.console().readLine());
@@ -72,13 +67,14 @@ public class App {
                             case 1:
                                 System.out.print("Ingrese un elemento a agregar a la lista: ");
                                 lista.agregarElemento(String.valueOf(System.console().readLine()));
+
                                 break;
                             case 2:
                                 System.out.print("Ingrese un elemento a eliminar de la lista: ");
                                 lista.eliminarElemento(String.valueOf(System.console().readLine()));
                                 break;
                             case 3:
-                                System.out.print("Ingrese un numero paras acceder al indice de la lista: ");
+                                System.out.print("Ingrese un numero para acceder al indice de la lista: ");
                                 int indice = Integer.parseInt(System.console().readLine());
                                 try{
                                     System.out.println("El elemento en el indice " + indice + " es: " + lista.mostrarElemento(indice));
@@ -97,8 +93,8 @@ public class App {
                         }
                         
                     } while (opcion!= 5);
-
-                   
+                                    
+                break;   
 
                 default:
                     break;
