@@ -129,7 +129,7 @@ public class App {
                                     System.out.println("Lista de cadenas: " + recursividad.getListaDeCadenas());
                                     System.out.println();
 
-                                    System.out.println("Ingrese una cadena a buscar: ");
+                                    System.out.print("Ingrese una cadena a buscar: ");
                                     String cadena = String.valueOf(System.console().readLine());
                                     int indice = 0;
 
@@ -207,6 +207,9 @@ public class App {
                     
 
                     default:
+                    System.out.println();
+                    System.out.println("Opcion incorrecta. Intente nuevamente...");
+                    System.out.println();
                     break;
             }
 
