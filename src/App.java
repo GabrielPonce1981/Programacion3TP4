@@ -18,8 +18,7 @@ public class App {
             System.out.println("---------- 1. Ejercicio 1 -----------");
             System.out.println("---------- 2. Ejercicio 2 -----------");
             System.out.println("---------- 3. Ejercicio 3 -----------");
-            System.out.println("---------- 4. Ejercicio 11 ----------");
-            System.out.println("---------- 5. Salir -----------------");
+            System.out.println("---------- 4. Salir -----------------");
 
             System.out.print("Ingrese la opcion deseada: ");
             opcion = Integer.parseInt(System.console().readLine());
@@ -64,7 +63,7 @@ public class App {
                         System.out.println("---------4. Mostrar lista-----------");
                         System.out.println("---------5. Salir-------------------");
                         System.out.println();
-                        System.out.print("Ingrese una opcion del 1 al 4, 5 para salir: ");
+                        System.out.print("Ingrese la opcion deseada: ");
                         opcion = Integer.parseInt(System.console().readLine());
     
                         switch (opcion) {
@@ -115,7 +114,7 @@ public class App {
                         
                   
 
-                        System.out.println("Ingrese una opcion del 1 al 4 y 5 para salir: ");
+                        System.out.print("Ingrese la opcion deseada: ");
                         opcion = Integer.parseInt(System.console().readLine());
 
                             switch (opcion) {
@@ -211,7 +210,7 @@ public class App {
                     break;
             }
 
-        }while(opcion != 5 );
+        }while(opcion != 4 );
 
     }
 }
