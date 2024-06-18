@@ -3,6 +3,8 @@ import Ejercicio1.Calculadora;
 import Ejercicio2.Listas;
 import Ejercicio3.RecursividadInciso1;
 import Ejercicio3.RecursividadInciso2;
+import Ejercicio3.RecursividadInciso3;
+import Ejercicio3.RecursividadInciso4;
 
 public class App {
 
@@ -155,7 +157,46 @@ public class App {
 
                                     System.out.println("La cantidad de impares en la lista es: " + resultado2);
 
-                                break;        
+                                    break;   
+                                
+                                case 3:
+                                    RecursividadInciso3 array = new RecursividadInciso3(0);
+
+                                    array.agregarNumero(1);
+                                    array.agregarNumero(2);
+                                    array.agregarNumero(3);
+                                    array.agregarNumero(4);
+                                    array.agregarNumero(5);
+                                    array.agregarNumero(6);
+                                    
+                                    boolean listaCreciente = array.esCreciente(array.getLista(), array.getIndice());
+
+                                    System.out.println("Lista de enteros: " + array.getLista());
+
+                                    if (listaCreciente == true) {
+                                        System.out.println("La lista es creciente");
+                                    } else {
+                                        System.out.println("La lista no es creciente");   
+                                    }
+
+                                    break;
+
+
+
+                                case 4:
+                                    RecursividadInciso4 lista2 = new RecursividadInciso4();
+
+                                    lista2.agregarElemento(18);
+                                    lista2.agregarElemento(2);
+                                    lista2.agregarElemento(35);
+                                    lista2.agregarElemento(400);
+                                    lista2.agregarElemento(55);
+                            
+                                    System.out.println(lista2.getLista());
+                            
+                                    System.out.println("El maximo de la lista es: " + lista2.buscarMaximo(lista2.getLista(), 0));   
+
+                                    break;    
 
                                 default:
                                 break;
